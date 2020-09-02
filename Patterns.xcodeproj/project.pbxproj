@@ -11,6 +11,8 @@
 		5C4CA6ED24FF97B5009DC535 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4CA6EC24FF97B5009DC535 /* UIView+Layout.swift */; };
 		5C4CA6EF24FF995B009DC535 /* ChainOfResponsibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4CA6EE24FF995B009DC535 /* ChainOfResponsibility.swift */; };
 		5C4CA6F224FF9D25009DC535 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4CA6F124FF9D25009DC535 /* Button.swift */; };
+		5C4CA6F524FFA640009DC535 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4CA6F424FFA640009DC535 /* Observable.swift */; };
+		5C4CA6F724FFA746009DC535 /* SomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4CA6F624FFA746009DC535 /* SomeViewModel.swift */; };
 		6E18B9B224FEC3F7007A4216 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E18B9B124FEC3F7007A4216 /* AppDelegate.swift */; };
 		6E18B9B424FEC3F7007A4216 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E18B9B324FEC3F7007A4216 /* SceneDelegate.swift */; };
 		6E18B9B624FEC3F7007A4216 /* SomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E18B9B524FEC3F7007A4216 /* SomeViewController.swift */; };
@@ -26,6 +28,8 @@
 		5C4CA6EC24FF97B5009DC535 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		5C4CA6EE24FF995B009DC535 /* ChainOfResponsibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainOfResponsibility.swift; sourceTree = "<group>"; };
 		5C4CA6F124FF9D25009DC535 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		5C4CA6F424FFA640009DC535 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		5C4CA6F624FFA746009DC535 /* SomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeViewModel.swift; sourceTree = "<group>"; };
 		6E18B9AE24FEC3F7007A4216 /* Patterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Patterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E18B9B124FEC3F7007A4216 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E18B9B324FEC3F7007A4216 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +70,14 @@
 			path = ChainOfResponsibility;
 			sourceTree = "<group>";
 		};
+		5C4CA6F324FFA5AD009DC535 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				5C4CA6F424FFA640009DC535 /* Observable.swift */,
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
 		6E18B9A524FEC3F7007A4216 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +97,7 @@
 		6E18B9B024FEC3F7007A4216 /* Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				5C4CA6F324FFA5AD009DC535 /* Observer */,
 				5C4CA6F024FF9D18009DC535 /* ChainOfResponsibility */,
 				5C4CA6EB24FF97A0009DC535 /* Extensions */,
 				6E18B9B124FEC3F7007A4216 /* AppDelegate.swift */,
@@ -97,6 +110,7 @@
 				6E18B9C524FEC418007A4216 /* Singleton.swift */,
 				6E18B9C724FEC586007A4216 /* Delegate.swift */,
 				5C4CA6E924FF92C4009DC535 /* Builder.swift */,
+				5C4CA6F624FFA746009DC535 /* SomeViewModel.swift */,
 			);
 			path = Patterns;
 			sourceTree = "<group>";
@@ -174,10 +188,12 @@
 			files = (
 				6E18B9B624FEC3F7007A4216 /* SomeViewController.swift in Sources */,
 				6E18B9C824FEC586007A4216 /* Delegate.swift in Sources */,
+				5C4CA6F724FFA746009DC535 /* SomeViewModel.swift in Sources */,
 				6E18B9C624FEC418007A4216 /* Singleton.swift in Sources */,
 				6E18B9B224FEC3F7007A4216 /* AppDelegate.swift in Sources */,
 				6E18B9B424FEC3F7007A4216 /* SceneDelegate.swift in Sources */,
 				5C4CA6ED24FF97B5009DC535 /* UIView+Layout.swift in Sources */,
+				5C4CA6F524FFA640009DC535 /* Observable.swift in Sources */,
 				5C4CA6EF24FF995B009DC535 /* ChainOfResponsibility.swift in Sources */,
 				5C4CA6F224FF9D25009DC535 /* Button.swift in Sources */,
 				5C4CA6EA24FF92C4009DC535 /* Builder.swift in Sources */,

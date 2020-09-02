@@ -10,9 +10,11 @@ import UIKit
 
 class SomeViewController: UIViewController {
     weak var delegate: SomeViewControllerDelegate?
+    weak var viewModel: SomeViewModel! { didSet { unbind(from: oldValue) } }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        bind(to: viewModel)
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -23,6 +25,20 @@ class SomeViewController: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         delegate?.viewControllerBeginInactive(self, sayHelloWorld: "Hello World")
+    }
+}
+
+// MARK: - bind/unbind ViewModel method`s
+
+extension SomeViewController {
+    private func bind(to viewModel: SomeViewModelOutput) {
+        viewModel.observableStr.observe(on: self) { newValue in
+            
+        }
+    }
+    
+    private func unbind(from item: SomeViewModelOutput?) {
+        item?.observableStr.remove(observer: self)
     }
 }
 
