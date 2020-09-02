@@ -59,6 +59,34 @@ class SomeView: UIView {
     }
 }
 
+class CommonViewNode: UIView, SomeViewNode {
+    // TODO
+}
 
+class IndividualUserViewNode: UIView, SomeViewNode {
+    
+    init(user: User) {
+        super.init(frame: .zero)
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
+    // TODO
+}
+
+class OrganizationViewNode: UIView, SomeViewNode {
+    
+    init(user: User) {
+        super.init(frame: .zero)
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
+    // TODO
+}
 
 

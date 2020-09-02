@@ -15,9 +15,17 @@ extension UIView {
             return
         }
         translatesAutoresizingMaskIntoConstraints = false
-        topAnchor.constraint(equalTo: superview.topAnchor, constant: 0).isActive = true
-        bottomAnchor.constraint(equalTo: superview.bottomAnchor, constant: 0).isActive = true
-        leadingAnchor.constraint(equalTo: superview.leadingAnchor, constant: 0).isActive = true
-        trailingAnchor.constraint(equalTo: superview.trailingAnchor, constant: 0).isActive = true
+    
+        let constraints:[NSLayoutConstraint] = [
+            topAnchor.constraint(equalTo: superview.topAnchor, constant: 0),
+            bottomAnchor.constraint(equalTo: superview.bottomAnchor, constant: 0),
+            leadingAnchor.constraint(equalTo: superview.leadingAnchor, constant: 0),
+            trailingAnchor.constraint(equalTo: superview.trailingAnchor, constant: 0)
+        ]
+        NSLayoutConstraint.activate(constraints)
     }
 }
+
+
+
+
