@@ -10,9 +10,10 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    lazy var compositedAppDelegate = AppDelegateFactory.makeDefault(self.window)
+    
     var window: UIWindow?
+    lazy var compositedAppDelegate = AppDelegateFactory.makeDefault(self.window)
+    let mediator = AppLifecycleMediator.makeDefaultMediator()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
