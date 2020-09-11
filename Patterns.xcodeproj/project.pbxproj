@@ -20,6 +20,8 @@
 		5C4CA7042501EEFA009DC535 /* StartupConfiguratorAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4CA7032501EEFA009DC535 /* StartupConfiguratorAppDelegate.swift */; };
 		5C4CA7062501F3A9009DC535 /* Mediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4CA7052501F3A9009DC535 /* Mediator.swift */; };
 		5C4CA70825021B12009DC535 /* Just Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4CA70725021B12009DC535 /* Just Description.swift */; };
+		5C573A15250B4B8F00B77E7B /* StyleDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C573A14250B4B8F00B77E7B /* StyleDecorator.swift */; };
+		5C573A17250B4DBE00B77E7B /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C573A16250B4DBE00B77E7B /* Styles.swift */; };
 		6E18B9B224FEC3F7007A4216 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E18B9B124FEC3F7007A4216 /* AppDelegate.swift */; };
 		6E18B9B424FEC3F7007A4216 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E18B9B324FEC3F7007A4216 /* SceneDelegate.swift */; };
 		6E18B9B624FEC3F7007A4216 /* SomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E18B9B524FEC3F7007A4216 /* SomeViewController.swift */; };
@@ -44,6 +46,8 @@
 		5C4CA7032501EEFA009DC535 /* StartupConfiguratorAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupConfiguratorAppDelegate.swift; sourceTree = "<group>"; };
 		5C4CA7052501F3A9009DC535 /* Mediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mediator.swift; sourceTree = "<group>"; };
 		5C4CA70725021B12009DC535 /* Just Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Just Description.swift"; sourceTree = "<group>"; };
+		5C573A14250B4B8F00B77E7B /* StyleDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleDecorator.swift; sourceTree = "<group>"; };
+		5C573A16250B4DBE00B77E7B /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		6E18B9AE24FEC3F7007A4216 /* Patterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Patterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E18B9B124FEC3F7007A4216 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E18B9B324FEC3F7007A4216 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +108,15 @@
 			path = "AppDelegate+Composite";
 			sourceTree = "<group>";
 		};
+		5C573A13250B4B7800B77E7B /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				5C573A14250B4B8F00B77E7B /* StyleDecorator.swift */,
+				5C573A16250B4DBE00B77E7B /* Styles.swift */,
+			);
+			path = Decorator;
+			sourceTree = "<group>";
+		};
 		6E18B9A524FEC3F7007A4216 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +136,7 @@
 		6E18B9B024FEC3F7007A4216 /* Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				5C573A13250B4B7800B77E7B /* Decorator */,
 				5C4CA6FE2501EA20009DC535 /* AppDelegate+Composite */,
 				5C4CA6F324FFA5AD009DC535 /* Observer */,
 				5C4CA6F024FF9D18009DC535 /* ChainOfResponsibility */,
@@ -216,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C4CA7062501F3A9009DC535 /* Mediator.swift in Sources */,
+				5C573A15250B4B8F00B77E7B /* StyleDecorator.swift in Sources */,
 				6E18B9B624FEC3F7007A4216 /* SomeViewController.swift in Sources */,
 				5C4CA7042501EEFA009DC535 /* StartupConfiguratorAppDelegate.swift in Sources */,
 				5C4CA6F924FFAAD5009DC535 /* Adapter.swift in Sources */,
@@ -233,6 +248,7 @@
 				5C4CA6EF24FF995B009DC535 /* ChainOfResponsibility.swift in Sources */,
 				5C4CA6F224FF9D25009DC535 /* Button.swift in Sources */,
 				5C4CA6EA24FF92C4009DC535 /* Builder.swift in Sources */,
+				5C573A17250B4DBE00B77E7B /* Styles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

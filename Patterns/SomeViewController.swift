@@ -12,6 +12,12 @@ class SomeViewController: UIViewController {
     weak var delegate: SomeViewControllerDelegate?
     weak var viewModel: SomeViewModel! { didSet { unbind(from: oldValue) } }
     
+    @IBOutlet weak var label: UILabel! {
+        didSet {
+            label.decorator.apply(Styles.fontNormal, Styles.corners(rounded: true))
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         bind(to: viewModel)
